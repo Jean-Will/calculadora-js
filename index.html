@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<script type="text/javascript" src="calculadora.js"></script>
+
+</head>
+<body>
+<title> Calculadora</title>
+
+
+<h1>Calculadora </h1>
+
+<table border="1">
+    <tr id="nomeId" >
+        <td colspan="4" style="width: 22%;"              class="coluna1"><span>SmartCalculator</span></td>
+    </tr>
+
+    <tr  id="displayId">
+        <td id="displayValue" colspan="4" style="width: 22%;height: 70px;" class="coluna"> </td>
+    
+    </tr>
+
+    <tr id="operacoesLinha1">
+        <td id="porcentual" onclick="guardaOperacao('%')" class="coluna">%</td>
+        <td id="CE" onclick="guardaValor(' ')"            class="coluna">CE</td> 
+        <td id="reiniciar" onclick="guardaValor(' ')"     class="coluna">C</td> 
+        <td id="apagar" onclick="apagar()"                class="coluna">AC</td>
+
+    </tr>
+
+    <tr id="operacoesLinha2">
+        <td id="7" onclick="guardaValor('7')"            class="coluna">7</td>
+        <td id="8" onclick="guardaValor('8')"            class="coluna">8</td>
+        <td id="9" onclick="guardaValor('9')"            class="coluna">9</td>
+        <td id="divisao" onclick="guardaOperacao('/')"   class="coluna">/</td>
+
+    </tr>
+
+    <tr id="operacoesLinha3">
+        <td id="4" onclick="guardaValor('4')"                class="coluna">4</td>
+        <td id="5" onclick="guardaValor('5')"                class="coluna">5</td>
+        <td id="6" onclick="guardaValor('6')"                class="coluna">6</td>
+        <td id="multiplicacao" onclick="guardaOperacao('*')" class="coluna">X</td>
+
+    </tr>
+
+    <tr id="operacoesLinha4">
+        <td id="1" onclick="guardaValor('1')"                class="coluna">1</td>
+        <td id="2" onclick="guardaValor('2')"                class="coluna">2</td>
+        <td id="3" onclick="guardaValor('3')"                class="coluna">3</td>
+        <td id="+" onclick="guardaOperacao('+')"             class="coluna">+</td>
+    </tr>
+
+    <tr id="operacoesLinha5">
+        <td id="subtracao" onclick="guardaOperacao('-')"    class="coluna">-</td>
+        <td id="zero" onclick="guardaValor('0')"            class="coluna"> 0</td>
+        <td id="virgula" onclick="(',')"                    class="coluna">,</td>
+        <td id="=" onclick="calcular()"                     class="coluna">=</td>
+    </tr>
+</table>
+<input type="hidden" id="valor1"></input>
+<input type="hidden" id="operacaoDigitada"></input>
+<input type="hidden" id="valor2"></input>
+
+</body>
+
+
+</html>
